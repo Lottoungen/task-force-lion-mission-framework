@@ -1,0 +1,317 @@
+//--- Respawn (THIS OVERRIDES WHAT YOU SET IN THE EDEN EDITOR)
+//  Check out https://community.bistudio.com/wiki/Arma_3_Respawn for info
+respawn = 3;
+respawnDelay = 30;
+respawnOnStart = -1;
+respawnTemplates[] = {"ace_spectator","Counter","Wave"};
+
+// This will make it so no AI appear when slotting
+disabledai=1;
+
+aiKills = 1;
+
+class ACEX_Fortify_Presets {
+    class TFL_Preset {
+        displayName = "TFL Preset";
+        objects[] = {
+            {"Land_SandbagBarricade_01_half_F", 5},
+            {"Land_BagFence_Long_F", 3},
+            {"Land_BagFence_Round_F", 3},
+            {"Land_WoodenShelter_01_F", 10},
+			{"Land_Plank_01_4m_F", 1},
+			{"TFLion_Flag", 1},
+            {"ACE_TacticalLadder", 5},
+            {"OmniDirectionalAntenna_01_olive_F", 15},
+            {"Land_CamoNetVar_NATO", 7},
+			{"Land_CamoNetVar_NATO_EP1", 7}
+        };
+    };
+};  
+
+
+class CfgSounds
+{
+	sounds[] = {intro, lotto, martin, whatdoyouneed, bulletknee, staysharp, ollie, dontdieoutthere, anythingelse, aintmuchfortalking, needsomething, hmm, everythingalright, onourside, dontscrewthisup, xristos, chris, biggie, whathaveyoubeeneating, enemyhands, comingback, disrespectgeneral, keepeyeout, rpglate, catchyoustealing, faithlessdogs, godsgaveyoutwohands, smartweapon, weaponoutofhands, newcomer};
+
+				class brown
+	{
+		name = "brown";
+		sound[] = {"\voice\brown.ogg", db+24, 1};
+		titles[] = {};
+	};
+				class jewich
+	{
+		name = "jewich";
+		sound[] = {"\voice\jewich.ogg", db+24, 1};
+		titles[] = {};
+	};
+		class ranger
+	{
+		name = "ranger";
+		sound[] = {"\voice\ranger.ogg", db+24, 1};
+		titles[] = {};
+	};
+		class chubby
+	{
+		name = "chubby";
+		sound[] = {"\voice\chubby.ogg", db+24, 1};
+		titles[] = {};
+	};
+	class intro
+	{
+		name = "intro";
+		sound[] = {"\intro.ogg", db+2, 1};
+		titles[] = {};
+	};
+     
+            class lotto
+	{
+		name = "lotto";
+		sound[] = {"\voice\lotto.ogg", db+24, 1, 10};
+		titles[] = {};
+	
+	};	
+
+		   class martin
+	{
+		name = "martin";
+		sound[] = {"\voice\martin.ogg", db+24, 1, 10};
+		titles[] = {};
+	
+	};	
+            class ollie
+	{
+		name = "ollie";
+		sound[] = {"\voice\ollie.ogg", db+24, 1, 10};
+		titles[] = {};
+	
+	};	
+	        class swizz
+	{
+		name = "swizz";
+		sound[] = {"\voice\swizz.ogg", db+24, 1, 10};
+		titles[] = {};
+	
+	};	
+	        class eskimo
+	{
+		name = "eskimo";
+		sound[] = {"\voice\eskimo.ogg", db+24, 1, 10};
+		titles[] = {};
+	
+	};	
+	        class nightmare
+	{
+		name = "nightmare";
+		sound[] = {"\voice\nightmare.ogg", db+24, 1, 10};
+		titles[] = {};
+	
+	};	
+	  class bulletknee
+	{
+		name = "bulletknee";
+		sound[] = {"\voice\bulletknee.ogg", db+24, 1, 10};
+		titles[] = {};
+	};	
+
+	 class chris
+	{
+		name = "chris";
+		sound[] = {"\voice\chris.ogg", db+24, 1, 10};
+		titles[] = {};
+	};					
+		class xristos
+	{
+		name = "xristos";
+		sound[] = {"\voice\xristos.ogg", db+24, 1, 10};
+		titles[] = {};
+	};					
+										class biggie
+	{
+		name = "biggie";
+		sound[] = {"\voice\biggie.ogg", db+24, 1, 10};
+		titles[] = {};
+	};								
+									
+									
+									class rpglate
+	{
+		name = "rpglate";
+		sound[] = {"\voice\rpglate.ogg", db+24, 1, 10};
+		titles[] = {};
+	};
+
+				class newcomer
+	{
+		name = "newcomers";
+		sound[] = {"\voice\newcomer.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+				class smartweapon
+	{
+		name = "smartweapon";
+		sound[] = {"\voice\smartweapon.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+				class godsgaveyoutwohands
+	{
+		name = "godsgaveyoutwohands";
+		sound[] = {"\voice\godsgaveyoutwohands.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+			
+			class faithlessdogs
+	{
+		name = "faithlessdogs";
+		sound[] = {"\voice\faithlessdogs.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+
+		class catchyoustealing
+	{
+		name = "catchyoustealing";
+		sound[] = {"\voice\catchyoustealing.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+
+	class keepeyeout
+	{
+		name = "keepeyeout";
+		sound[] = {"\voice\keepeyeout.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+
+		class disrespectgeneral
+	{
+		name = "disrespectgeneral";
+		sound[] = {"\voice\disrespectgeneral.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+		class comingback
+	{
+		name = "comingback";
+		sound[] = {"\voice\comingback.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+	class whatdoyouneed
+	{
+		name = "whatdoyouneed";
+		sound[] = {"\voice\whatdoyouneed.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+        	class staysharp
+	{
+		name = "staysharp";
+		sound[] = {"\voice\staysharp.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+        	class dontdieoutthere
+	{
+		name = "dontdieoutthere";
+		sound[] = {"\voice\dontdieoutthere.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+        	class anythingelse
+	{
+		name = "anythingelse";
+		sound[] = {"\voice\anythingelse.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+        	class aintmuchfortalking
+	{
+		name = "aintmuchfortalking";
+		sound[] = {"\voice\aintmuchfortalking.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+        	class needsomething
+	{
+		name = "needsomething";
+		sound[] = {"\voice\needsomething.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+        	class hmm
+	{
+		name = "hmm";
+		sound[] = {"\voice\hmm.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+        	class everythingalright
+	{
+		name = "everythingalright";
+		sound[] = {"\voice\everythingalright.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+        	class onourside
+	{
+		name = "onourside";
+		sound[] = {"\voice\onourside.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+        	class dontscrewthisup
+	{
+		name = "dontscrewthisup";
+		sound[] = {"\voice\dontscrewthisup.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+        	class whathaveyoubeeneating
+	{
+		name = "whathaveyoubeeneating";
+		sound[] = {"\voice\whathaveyoubeeneating.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+        	class enemyhands
+	{
+		name = "enemyhands";
+		sound[] = {"\voice\enemyhands.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+        	class hateman
+	{
+		name = "hateman";
+		sound[] = {"\voice\hateman.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+       	class armor
+	{
+		name = "armor";
+		sound[] = {"\voice\armor.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+       	class trouble
+	{
+		name = "trouble";
+		sound[] = {"\voice\trouble.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+	       	class historywalls
+	{
+		name = "historywalls";
+		sound[] = {"\voice\historywalls.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+		       	class reliablepeople
+	{
+		name = "reliablepeople";
+		sound[] = {"\voice\reliablepeople.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+			       	class handsfull
+	{
+		name = "handsfull";
+		sound[] = {"\voice\handsfull.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+				       	class winter
+	{
+		name = "winter";
+		sound[] = {"\voice\winter.ogg", db+18, 1, 10};
+		titles[] = {};
+	};
+	    class helicrash 
+		{
+        name = "crash"; // Replace with the desired name for the music track
+        sound[] = {"crash.ogg", db+18, 1.0};
+        duration = 18; // Replace with the duration of the music track in seconds
+		titles[] = {};
+	};
+};
