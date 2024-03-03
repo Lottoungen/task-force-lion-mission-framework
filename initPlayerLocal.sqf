@@ -1,3 +1,11 @@
+[
+    ["UpdateDetails",briefingName],
+    ["UpdateState",getText(configFile >> "CfgWorlds" >> worldName >> "description")],
+    ["UpdatePartySize",count playableUnits],
+    ["UpdatePartyMax",getNumber(missionConfigFile >> "Header" >> "maxPlayers")]
+] call (missionNameSpace getVariable ["DiscordRichPresence_fnc_update",{}]);
+
+
 //AceGrassCutter to all players
 _AceGrassCut = ["grass_cut","Cut Grass","",
 	{[player] call ace_common_fnc_goKneeling; [player, "AinvPknlMstpSnonWnonDnon_medic_1",1] call ace_common_fnc_doAnimation;

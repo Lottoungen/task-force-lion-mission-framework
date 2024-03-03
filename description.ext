@@ -1,3 +1,16 @@
+class CfgDiscordRichPresence {
+    applicationID="1213873840187252867";             // Provided by discord
+    defaultDetails="Joining....";            // Upper text
+    defaultState="";              // Lower text  
+    defaultLargeImageKey="tfl_logo_plain";      // Large image
+    defaultLargeImageText="Task Force Lion";     // Large image hover text
+    defaultSmallImageKey="arma3_logo";      // Small image
+    defaultSmallImageText="Arma 3";     // Small image hover text
+    defaultButtons[]={"Join Discord", "https://discord.gg/vECkssKKZZ"};          // Button texts and urls
+    useTimeElapsed=1;             // Show time elapsed since the player connected (1 - true, 0 - false)
+};
+
+
 //--- Respawn (THIS OVERRIDES WHAT YOU SET IN THE EDEN EDITOR)
 //  Check out https://community.bistudio.com/wiki/Arma_3_Respawn for info
 respawn = 3;
