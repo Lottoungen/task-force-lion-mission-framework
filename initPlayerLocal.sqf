@@ -77,6 +77,7 @@ _day = date select 2;
 _month = date select 1;  
 _year = date select 0;  
 _date = format ["%1\%2\%3",_day,_month,_year]; 
+_time = [daytime,"HH:MM"] call bis_fnc_timetostring;
 _mapName = getText(configFile >> "CfgWorlds" >> worldName >> "description");
 
 [_text,0.01,0.01,10,-1,0,90]spawn bis_fnc_dynamicText; 
@@ -87,13 +88,13 @@ sleep 15;
  [           
   [_operationName,"align = 'left' size = '1' ","#CAF6C9"],
   ["","<br/>"],
-  [_date,"<br/> align = 'left' size = '1' ","#CAF6C9"],
+  [_date + " " + _time,"align = 'left' size = '1' ","#CAF6C9"],
   ["","<br/>"],
-  ["Spartan Platoon","align = 'left' size = '1' ","#CAF6C9"],
+  [_mapName, "align = 'left' size = '1' ","#CAF6C9"], 
   ["","<br/>"],
-  ["1st Ranger Co, Altis Special Operations Command", "align = 'left' size = '1' ","#CAF6C9"],
+  ["Spartan Platoon, 1st Ranger Company","align = 'left' size = '1' ","#CAF6C9"],
   ["","<br/>"],
-  [_mapName, "align = 'left' size = '1' ","#CAF6C9"],  
+  ["Altis Special Operations Command", "align = 'left' size = '1' ","#CAF6C9"], 
   ["","<br/>"]
              
  ], safeZoneX /1.2, safeZoneH / 1.5
