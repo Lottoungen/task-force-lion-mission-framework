@@ -76,7 +76,7 @@ _operationName = briefingName;
 _day = date select 2;  
 _month = date select 1;  
 _year = date select 0;  
-_date = format ["%1\%2\%3",_day,_month,_year]; 
+_date = format ["%1/%2/%3",_day,_month,_year]; 
 _time = [daytime,"HH:MM"] call bis_fnc_timetostring;
 _mapName = getText(configFile >> "CfgWorlds" >> worldName >> "description");
 
@@ -92,7 +92,7 @@ sleep 15;
   ["","<br/>"],
   [_mapName, "align = 'left' size = '1' ","#CAF6C9"], 
   ["","<br/>"],
-  ["Spartan Platoon, 1st Ranger Company","align = 'left' size = '1' ","#CAF6C9"],
+  ["Spartan Platoon, 1st Ranger Co.","align = 'left' size = '1' ","#CAF6C9"],
   ["","<br/>"],
   ["Altis Special Operations Command", "align = 'left' size = '1' ","#CAF6C9"], 
   ["","<br/>"]
