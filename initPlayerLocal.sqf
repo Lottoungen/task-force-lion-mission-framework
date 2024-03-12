@@ -92,7 +92,7 @@ sleep 15;
   ["","<br/>"],
   [_mapName, "align = 'left' size = '1' ","#CAF6C9"], 
   ["","<br/>"],
-  ["Spartan Platoon, 1st Ranger Company","align = 'left' size = '1' ","#CAF6C9"],
+  ["Spartan Platoon, 1st Ranger Co.","align = 'left' size = '1' ","#CAF6C9"],
   ["","<br/>"],
   ["Altis Special Operations Command", "align = 'left' size = '1' ","#CAF6C9"], 
   ["","<br/>"]
