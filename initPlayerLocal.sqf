@@ -76,7 +76,7 @@ _operationName = briefingName;
 _day = date select 2;  
 _month = date select 1;  
 _year = date select 0;  
-_date = format ["%1\%2\%3",_day,_month,_year]; 
+_date = format ["%1/%2/%3",_day,_month,_year]; 
 _time = [daytime,"HH:MM"] call bis_fnc_timetostring;
 _mapName = getText(configFile >> "CfgWorlds" >> worldName >> "description");
 
