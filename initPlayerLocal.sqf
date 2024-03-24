@@ -65,6 +65,19 @@ _action2 = ["Mount NVG","Mount NVG","",_statement2,_condition2] call ace_interac
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+fnc_treatment = {
+    params["_caller","_target","_selectionName","_className","_itemUser","_usedItem"];
+    if (!([_target] call ace_common_fnc_isAwake) and alive _target) then {
+        [["Hold on, you are being treated.", "PLAIN",-1,true]] remoteExec ["titleText",_target];
+        [5] remoteExec ["titleFadeOut",_target];
+    };
+};
+["ace_treatmentSucceded",fnc_treatment] call CBA_fnc_addEventHandler;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 cutText ["","BLACK IN"];
 
 

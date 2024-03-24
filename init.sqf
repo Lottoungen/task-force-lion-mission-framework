@@ -63,4 +63,16 @@ if (hasInterface) then {
     }];
 }; 
 
+if (isNil "AceCaptiveEH") then {
+    AceCaptiveEH = ["ace_captiveStatusChanged",
+    {
+        params ["_unit", "_state"];
+        if (_state && {
+            local _unit
+        })
+        then {
+            _unit addGoggles "G_Blindfold_01_black_F";
+        };
+    }] call CBA_fnc_addEventHandler;
+};
 
