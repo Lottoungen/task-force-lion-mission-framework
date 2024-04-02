@@ -1,6 +1,6 @@
 //ARCHER PLAYERUIDS
-archerPlayers = ["76561198012295174","76561198200414643", "76561198028915413"];
-//                  Lotto                   Brown                 Martin
+archerPlayers = ["76561198012295174", "76561198028915413"];
+//                  Lotto                       Martin
 
 //This attaches a marker to the rally point at game start
 "RPMARK_1" setmarkerpos RP_west;
