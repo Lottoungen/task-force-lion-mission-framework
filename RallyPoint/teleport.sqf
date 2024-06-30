@@ -12,7 +12,7 @@ disableUserInput true;
 "moveRP" cutText ["Moving to Rallypoint...", "BLACK", 1, true];
 sleep 2;
 player SetPos (getPos _dest);
-_rettime = 60;
+_rettime = 20;
 while {_rettime>0} do {
 	_rettime = _rettime - 1;
 	titleText [str(_rettime), "PLAIN DOWN", 1];
