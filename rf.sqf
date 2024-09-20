@@ -52,7 +52,7 @@ for "_i" from 1 to 10 do {player addItemToBackpack "ACE_elasticBandage";};
 for "_i" from 1 to 10 do {player addItemToBackpack "AFMED_apap";};
 for "_i" from 1 to 4 do {player addItemToBackpack "ACE_tourniquet";};
 for "_i" from 1 to 4 do {player addItemToBackpack "ACE_splint";};
-player addHeadgear "lot_aaf_rhsusf_opscore_t07_rct2";
+player addHeadgear "lot_mich_helmet_t07";
 player addGoggles "milgp_f_face_shield_khk";
 
 comment "Add items";
