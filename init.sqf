@@ -28,9 +28,9 @@ sleep 10;
 
  //EQUIP ARMBAND FOR X FACTION ON INIT
 
-_armbandListGreen = ["gsb_armband_nv_g", "gsb_armband_nv_g_r"];
-_armbandListRed = ["gsb_armband_nv_r", "gsb_armband_nv_r_r"];
-_armbandListYellow = ["gsb_armband_nv_y", "gsb_armband_nv_y_r"];
+
+_armbandListRed = ["G_Armband_NVG_red_F", "G_Headband_NVG_red_F"];
+
 
 {
 if(side _x == opfor) then
@@ -48,7 +48,7 @@ if (hasInterface) then {
 	_zeus addEventHandler ["CuratorObjectPlaced", {
         params ["_curator", "_entity"];
         
-		_armbandListRed = ["gsb_armband_nv_r", "gsb_armband_nv_r_r"];
+		_armbandListRed = ["G_Armband_NVG_red_F", "G_Headband_NVG_red_F"];
 		
 		if (_entity isKindOf "Man" && {(side _entity) == opfor}) then {
             _entity linkItem selectRandom _armbandListRed;
