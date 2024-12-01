@@ -21,14 +21,14 @@ _WplatoonRP = ["Wplatoon_rp","Deploy Platoon RP","",
 	_num = player nearEntities ['Man',15];
 	if(leader player == player) then
 		{
-			if(count _num >2) then
+			if(count _num >1) then
 				{
 					[player] call ace_common_fnc_goKneeling; [player, "AinvPknlMstpSnonWnonDnon_medic_1",1] call ace_common_fnc_doAnimation;
 					[20,[],{RP_west setVehiclePosition [(player modelToWorld[0,2,0]), [],0.5, "CAN_COLLIDE"];  hint "Rally Point Deployed";"RPMARK_1" setmarkerpos player;},{hint "Deploying interrupted"},"Deploying Rallypoint"] call ace_common_fnc_progressBar
 				}
 			else
 				{
-					hint 'Need more friendlies nearby to deploy Rally Point'
+					hint 'Need at least one friendly nearby to deploy Rally Point'
 				}
 		}
 	else
