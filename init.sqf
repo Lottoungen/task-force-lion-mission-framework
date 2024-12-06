@@ -24,7 +24,7 @@ archerPlayers = ["76561198012295174", "76561198028915413"];
 sleep 10;
 
 
-
+/*
 
  //EQUIP ARMBAND FOR X FACTION ON INIT
 
@@ -57,7 +57,8 @@ if (hasInterface) then {
     }];
 }; 
 
-/*
+*/
+
 
 if (isNil "AceCaptiveEH") then {
     AceCaptiveEH = ["ace_captiveStatusChanged",
