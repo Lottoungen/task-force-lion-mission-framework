@@ -26,7 +26,7 @@ player addHandgunItem "JCA_optic_MPO_black";
 player addHandgunItem "JCA_15Rnd_9x21_P226_Mag";
 
 comment "Add containers";
-player forceAddUniform "u_m21_uniform_t07";
+player forceAddUniform "lot_U_CombatUniformEURO_01_t07_F";
 player addVest "lot_v_extd_marciras_assaulter_belt_01_tan";
 player addBackpack "lot_kitbag_tan";
 
