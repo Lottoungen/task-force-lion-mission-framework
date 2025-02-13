@@ -28,7 +28,7 @@ sleep 10;
 
  //EQUIP ARMBAND FOR X FACTION ON INIT
 
-
+/*
 _armbandListRed = ["G_Armband_NVG_red_F", "G_Headband_NVG_red_F"];
 
 
@@ -56,6 +56,8 @@ if (hasInterface) then {
         
     }];
 }; 
+
+
 
 /*
 
