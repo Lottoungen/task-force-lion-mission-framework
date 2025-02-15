@@ -64,6 +64,12 @@ class CfgSounds
 		sound[] = {"\voice\ranger.ogg", db+24, 1};
 		titles[] = {};
 	};
+		class hammer
+	{
+		name = "hammer";
+		sound[] = {"\voice\hammer.ogg", db+24, 1};
+		titles[] = {};
+	};
 		class chubby
 	{
 		name = "chubby";

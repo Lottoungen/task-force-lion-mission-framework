@@ -21,7 +21,7 @@ if ( uniform player == "u_lot_dress_uniform_brown" ) then { _personalGreeting = 
 
 if ( uniform player == "lot_U_CombatUniformEURO_01_t09_F" ) then { _personalGreeting = 1; titleText ["<t align = 'center' valign = 'bottom' shadow = '2' color='#00ff00' size='1.2' font='PuristaSemibold' >Quartermaster Billy: </t><t color='#ffffff' size='1.2' font='PuristaMedium' >It's been a brutal winter. I can't remember the last time it was this cold, and for this long.</t>", "PLAIN DOWN", -1, true, true]; armoryGuy setRandomLip true; armoryGuy say "winter"; sleep 3; armoryGuy setRandomLip false;};
 if ( uniform player == "lot_U_CombatUniformEURO_02_t09_F" ) then { _personalGreeting = 1; titleText ["<t align = 'center' valign = 'bottom' shadow = '2' color='#00ff00' size='1.2' font='PuristaSemibold' >Quartermaster Billy: </t><t color='#ffffff' size='1.2' font='PuristaMedium' >It's been a brutal winter. I can't remember the last time it was this cold, and for this long.</t>", "PLAIN DOWN", -1, true, true]; armoryGuy setRandomLip true; armoryGuy say "winter"; sleep 3; armoryGuy setRandomLip false;};
-
+if ( currentWeapon player == "tsp_meleeWeapon_sledge_black" ) then { _personalGreeting = 1; titleText ["<t align = 'center' valign = 'bottom' shadow = '2' color='#00ff00' size='1.2' font='PuristaSemibold' >Quartermaster Billy: </t><t color='#ffffff' size='1.2' font='PuristaMedium' >What do you aim to do with that hammer, friend? Knock down a house?</t>", "PLAIN DOWN", -1, true, true]; armoryGuy setRandomLip true; armoryGuy say "hammer"; sleep 3; armoryGuy setRandomLip false;};
 
 if (_personalGreeting == 0 ) then { _rNum = selectRandom [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]; };
 
