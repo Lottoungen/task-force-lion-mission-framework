@@ -50,7 +50,7 @@ for "_i" from 1 to 18 do {player addItemToVest "JCA_30Rnd_556x45_Yellow_PMAG"};
 for "_i" from 1 to 5 do {player addItemToVest "ACE_quikclot"};
 for "_i" from 1 to 10 do {player addItemToVest "ACE_packingBandage"};
 for "_i" from 1 to 10 do {player addItemToVest "ACE_elasticBandage"};
-for "_i" from 1 to 10 do {player addItemToVest "AFMED_apap"};
+player addItemToVest "ACE_painkillers";
 for "_i" from 1 to 4 do {player addItemToVest "ACE_tourniquet"};
 for "_i" from 1 to 4 do {player addItemToVest "ACE_splint"};
 for "_i" from 1 to 30 do {player addItemToBackpack "1Rnd_HE_Grenade_shell"};

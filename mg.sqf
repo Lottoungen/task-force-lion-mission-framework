@@ -50,7 +50,7 @@ for "_i" from 1 to 4 do {player addItemToBackpack "Tier1_250Rnd_762x51_Belt_M62_
 for "_i" from 1 to 5 do {player addItemToVest "ACE_quikclot";};
 for "_i" from 1 to 10 do {player addItemToVest "ACE_packingBandage";};
 for "_i" from 1 to 10 do {player addItemToVest "ACE_elasticBandage";};
-for "_i" from 1 to 10 do {player addItemToVest "AFMED_apap";};
+player addItemToVest "ACE_painkillers";
 for "_i" from 1 to 4 do {player addItemToVest "ACE_tourniquet";};
 for "_i" from 1 to 4 do {player addItemToVest "ACE_splint";};
 player addHeadgear "lot_mich_helmet_t07";

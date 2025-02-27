@@ -34,7 +34,7 @@ comment "Add binoculars";
 player addWeapon "Rangefinder";
 
 comment "Add items to containers";
-for "_i" from 1 to 10 do {player addItemToUniform "AFMED_apap";};
+player addItemToVest "ACE_painkillers";
 for "_i" from 1 to 4 do {player addItemToUniform "ACE_CableTie";};
 player addItemToUniform "FISH_Cream_Kit_Europe";
 player addItemToUniform "ACE_DefusalKit";

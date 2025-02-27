@@ -34,7 +34,7 @@ player addWeapon "Rangefinder";
 
 comment "Add items to containers";
 // UNIFORM ITEMS //
-for "_i" from 1 to 15 do {player addItemToUniform "AFMED_apap";};
+for "_i" from 1 to 2 do {player addItemToUniform "ACE_painkillers";};
 for "_i" from 1 to 4 do {player addItemToUniform "ACE_CableTie";};
 player addItemToUniform "FISH_Cream_Kit_Europe";
 player addItemToUniform "ACE_DefusalKit";
